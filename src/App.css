@@ -1,0 +1,81 @@
+.Hi {
+  font-size: 1.2vw;
+  align-self: flex-start;   /* Text nach oben verschieben */
+  margin: 5px;             /* Optionaler Abstand */
+  cursor: default;         /* Normaler Cursor */
+  align-self: center;      /* Zentriert den Text (falls notwendig) */
+}
+
+.Umrandung_Tag {
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Checkbox wird zum unteren Rand des Containers verschoben */
+  align-items: center;       /* Zentriert horizontal */
+  width: 8vw;                /* feste Breite */
+  height: 8vw;               /* feste Höhe, gleich der Breite */
+  margin: 0px;
+  padding-right: 0px;
+}
+.checkbox {
+  font-size: 40px;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: 2px solid;
+  width: 4vw;
+  height: 4vw;
+  margin-top: 8%;
+  
+  display: flex;
+  justify-content: center;  /* Zentriert den Inhalt (z.B. das Häkchen) */
+  align-items: center;      /* Vertikal zentrieren */
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+
+.checkbox:hover{
+  
+  background-color: rgb(241, 229, 229);
+  border-color: rgb(66, 66, 66);
+}
+.Checkmark{
+  user-select: none;       /* verhindert Text-/Bildauswahl */
+  -webkit-user-drag: none; /* verhindert Ziehen in Safari/Chrome */
+  pointer-events: none;    /* ignoriert Maus-Events (optional) */
+
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.Tage-Grid{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10vw);
+    grid-template-rows: auto;
+   grid-gap: 8vh 1vw;}
+ 
+
+
+  .TopBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    
+  }
+  .Monat{
+    font-size: 5vh;
+    text-align: right;
+    margin: 0px;
+    padding: 1vh;
+  }
+  .Kalender{
+    font-size: 5vh;
+    text-align: right;
+    margin: 0px;
+    padding: 1vh;
+  }
