@@ -18,7 +18,7 @@ const Tagkalender = ({ Tag }) => {
     <div className="Umrandung_Tag">
       <p className="Hi">Tag {Tag}</p>
       <div className="checkbox" onClick={handleCheckboxClick}>
-        {isChecked && <img src={"public/image.png"} className="Checkmark"/>} {/* Show checkmark if checked */}
+        {isChecked && <img src={"/Kalender/image.png"} className="Checkmark"/>} {/* Show checkmark if checked */}
       </div>
     
 
